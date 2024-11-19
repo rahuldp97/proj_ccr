@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/8601a8c761.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="main_header_div">
+            <div class="mhd_left">
+                <div class="mhdl_container">
+                    <div class="mhdl_container_icon">
+                        <img src="./img/icon.png" alt="logo">
+                    </div>
+                    <nav class="mhdl_container_navi">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-cloud"></i>
+                                <h1>Weather</h1>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="mhd_mid">
+                <div class="mhdm_container_search">
+                    <input type="search" name="" id="search" placeholder="Search">
+                    <button id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="mhdm_container_mdisplay">
+                    <div class="mhdm_c_left">
+                        <div class="mhdm_c_l_top">
+                            <h1 id="place"></h1>
+                            <p id="prain"></p>
+                        </div>
+                        <div class="mhdm_c_l_bottom" id="tem">
+                            
+                        </div>
+                    </div>
+                    <div class="mhdm_c_right" id="wmi">
+                    </div>
+                </div>
+                <div class="mhdm_container_m2display">
+                    <div class="mhdmc_m2_top"><p>TODAY'S FORECAST</p></div>
+                    <div class="mhdmc_m2_bottom">
+                        <div class="mhdmc_time_w">
+                            <div class="mhdmctw_top">
+                                6:00 AM
+                            </div>
+                            <div class="mhdmctw_mid">
+                                <img src="./img/cs.png" alt=""/>
+                            </div>
+                            <div class="mhdmctw_bottom" >
+                                <h2 id="tem"></h2>
+                            </div>
+                        </div>
+                        <div class="mhdmc_time_w">
+                            <div class="mhdmctw_top">
+                                9:00 AM
+                            </div>
+                            <div class="mhdmctw_mid">
+                                <img src="./img/cs.png" alt=""/>
+                            </div>
+                            <div class="mhdmctw_bottom">
+                                <!-- <h2>25<sup>o</sup></h2> -->
+                                <h2 id="tem"></h2>
+                            </div>
+                        </div>
+                        <div class="mhdmc_time_w">
+                            <div class="mhdmctw_top">
+                                12:00 PM
+                            </div>
+                            <div class="mhdmctw_mid">
+                                <img src="./img/cs.png" alt=""/>
+                            </div>
+                            <div class="mhdmctw_bottom">
+                                <!-- <h2>25<sup>o</sup></h2> -->
+                                <h2 id="tem"></h2>
+                            </div>
+                        </div>
+                        <div class="mhdmc_time_w">
+                            <div class="mhdmctw_top">
+                                3:00 PM
+                            </div>
+                            <div class="mhdmctw_mid">
+                                <img src="./img/cs.png" alt=""/>
+                            </div>
+                            <div class="mhdmctw_bottom">
+                                <!-- <h2>25<sup>o</sup></h2> -->
+                                <h2 id="tem"></h2>
+                            </div>
+                        </div>
+                        <div class="mhdmc_time_w">
+                            <div class="mhdmctw_top">
+                                6:00 PM
+                            </div>
+                            <div class="mhdmctw_mid">
+                                <img src="./img/cs.png" alt=""/>
+                            </div>
+                            <div class="mhdmctw_bottom">
+                                <!-- <h2>25<sup>o</sup></h2> -->
+                                <h2 id="tem"></h2>
+                            </div>
+                        </div>
+                        <div class="mhdmc_time_w bn">
+                            <div class="mhdmctw_top">
+                                9:00 PM
+                            </div>
+                            <div class="mhdmctw_mid">
+                                <img src="./img/cs.png" alt=""/>
+                            </div>
+                            <div class="mhdmctw_bottom">
+                                <!-- <h2>25<sup>o</sup></h2> -->
+                                <h2 id="tem"></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mhdm_container_m3display">
+                    <div class="mhdm_c_m3_top">
+                        <h3>Air Condition</h3>
+                    </div>
+                    <div class="mhdm_c_m3_mid">
+                        <div class="mhdmcm3m_sc">
+                            <div class="mhdmcm3m_sc_r1">
+                                <div class="msr1_icon">
+                                    <i class="fa-solid fa-temperature-three-quarters"></i>
+                                </div>
+                                <div class="msr1_rest">
+                                    Real Feel
+                                </div>
+                            </div>
+                            <div class="mhdmcm3m_sc_r2">
+                                <div class="msr1_icon"></div>
+                                <div class="msr2_rest">
+                                    <p class="spc" id="spc"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mhdmcm3m_sc">
+                            <div class="mhdmcm3m_sc_r1">
+                                <div class="msr1_icon">
+                                    <i class="fa-solid fa-wind"></i>
+                                </div>
+                                <div class="msr1_rest">
+                                    Wind
+                                </div>
+                            </div>
+                            <div class="mhdmcm3m_sc_r2">
+                                <div class="msr1_icon"></div>
+                                <div class="msr2_rest" id="winds">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mhdm_c_m3_bottom">
+                        <div class="mhdmcm3m_sc">
+                            <div class="mhdmcm3m_sc_r1">
+                                <div class="msr1_icon">
+                                    <i class="fa-solid fa-droplet"></i>
+                                </div>
+                                <div class="msr1_rest">
+                                    Chance of rain
+                                </div>
+                            </div>
+                            <div class="mhdmcm3m_sc_r2">
+                                <div class="msr1_icon"></div>
+                                <div class="msr2_rest" id="rain">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="mhdmcm3m_sc">
+                            <div class="mhdmcm3m_sc_r1">
+                                <div class="msr1_icon">
+                                    <i class="fa-solid fa-sun"></i>
+                                </div>
+                                <div class="msr1_rest">
+                                    UV Index
+                                </div>
+                            </div>
+                            <div class="mhdmcm3m_sc_r2">
+                                <div class="msr1_icon"></div>
+                                <div class="msr2_rest" id="uvip">
+                                    
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="mhd_right">
+                <div class="mhdr_container">
+                    <div class="mhdr_c_r_top">
+                        FORECAST
+                    </div>
+                    <div class="mhdr_c_r_bottom" id="forecastContainer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="index.js"></script>
+</body>
+</html>

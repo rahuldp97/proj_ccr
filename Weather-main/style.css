@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header_container{
+    background-color: rgb(21, 47, 72);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.header_div_left{
+    background-color: rgba(63, 106, 146, 0.255);
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    height: 85%;
+    width: 30%;
+    position: relative;
+}
+.cloud1{
+    height: 200px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+.ub1{
+    height: 160px;
+    position: absolute;
+    top: 280px;
+    right: 30px;
+    transform: rotateX(10deg);
+}
+.rb1{
+    height: 130px;
+    width: 160px;
+    position: absolute;
+    bottom: 320px;
+    left: 45px;
+}
+.cloud2{
+    height: 150px;
+    position: absolute;
+    bottom: 120px;
+    left: 30px;
+}
+.header_div_right{
+    /* background-color: yellow; */
+    height: 85%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hdm_center{
+    /* background-color: #fff; */
+    height: 300px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.logo{
+    /* background-color: violet; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    height: 150px;
+}
+.name_of_web{
+    /* background-color: turquoise; */
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: monospace;
+    color: wheat;
+    letter-spacing: 5px;
+}
+.naming{
+    /* background-color: thistle; */
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    color: #fff;
+    letter-spacing: 2.5px;
+}
+.button_for_start{
+    /* background-color: tomato; */
+    width: 100%;
+    height: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button_for_start button{
+    background-color: rgb(71, 148, 255);
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+}
+.button_for_start button a{
+    text-decoration: none;
+    color: bisque;
+}
+@media screen and (max-width: 1270px) {
+    .header_div_left{
+        display: none;
+    }
+}
+@media screen and (max-width: 421px) {
+    .button_for_start button{
+        font-size: 0.8rem;
+    }
+}
